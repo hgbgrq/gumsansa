@@ -3,6 +3,7 @@ package com.example.gumsansa.ordering.svc.impl;
 import com.example.gumsansa.common.FileDto;
 import com.example.gumsansa.ordering.dto.req.OrderReadReqDto;
 import com.example.gumsansa.ordering.dto.req.OrderUpdateReqDto;
+import com.example.gumsansa.ordering.dto.res.OrderFileResDto;
 import com.example.gumsansa.ordering.dto.res.OrderReadListDto;
 import com.example.gumsansa.ordering.svc.OrderSvc;
 import org.springframework.stereotype.Service;
@@ -15,8 +16,9 @@ public class OrderSvcImpl implements OrderSvc {
     }
 
     @Override
-    public void uploadOrderFile(FileDto fileDto) {
-
+    public OrderFileResDto uploadOrderFile(FileDto fileDto) {
+        OrderFileResDto orderFileResDto = new OrderFileResDto();
+        return orderFileResDto;
     }
 
     @Override
