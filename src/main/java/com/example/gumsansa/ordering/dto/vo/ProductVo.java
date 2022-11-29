@@ -10,4 +10,19 @@ public class ProductVo {
 
     @Id
     private Long productId;
+
+    private Long orderId;
+
+    private String styleNo;
+
+    private String item;
+
+    private String size;
+
+    private String color;
+
+    private Integer qty;
+
+    private String etc;
+
 }

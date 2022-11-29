@@ -27,9 +27,9 @@ public class OrderingCtrl {
 
     @PostMapping("/upload")
     public ResponseEntity<OrderFileResDto> getFile(FileDto fileDto){
-        OrderFileResDto result = orderSvc.uploadOrderFile(fileDto);
+    OrderFileResDto result = orderSvc.uploadOrderFile(fileDto);
         return new ResponseEntity<>(result, HttpStatus.OK);
-    }
+}
 
     @PostMapping
     public ResponseEntity<String> regOrder(OrderRegReqDto orderRegReqDto){

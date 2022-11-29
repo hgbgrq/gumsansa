@@ -5,22 +5,17 @@ import jakarta.persistence.Id;
 import lombok.Data;
 
 @Data
-@Entity(name="order")
-public class OrderVo {
+@Entity(name="orderFile")
+public class OrderFileVo {
 
     @Id
-    private Long orderId;
-
     private Long orderFileId;
-
-    private String OrderDate;
-
-    private String dueDate;
-
-    private String companyNm;
 
     private String crtUsrId;
 
     private String crtDttm;
 
+    private String orderFileNm;
+
+    private String filePath;
 }
