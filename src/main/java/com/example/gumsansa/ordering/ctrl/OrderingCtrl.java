@@ -29,7 +29,7 @@ public class OrderingCtrl {
     public ResponseEntity<OrderFileResDto> getFile(FileDto fileDto){
     OrderFileResDto result = orderSvc.uploadOrderFile(fileDto);
         return new ResponseEntity<>(result, HttpStatus.OK);
-}
+    }
 
     @PostMapping
     public ResponseEntity<String> regOrder(OrderRegReqDto orderRegReqDto){
