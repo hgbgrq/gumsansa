@@ -4,9 +4,22 @@ spring:
     driver-class-name: org.mariadb.jdbc.Driver
     username: root
     password: root
-  jpa:
-    open-in-view: false
-    generate-ddl: true
-    show-sql: true
-    hibernate:
-      ddl-auto: update
+
+mybatis:
+  mapper-locations: classpath*:mapper/**/*.xml
+  configuration:
+    map-underscore-to-camel-case: true
+    jdbc-type-for-null: NULL
+
+springdoc:
+  api-docs:
+    path: /api-docs
+  default-consumes-media-type: application/json
+  default-produces-media-type: application/json
+  swagger-ui:
+    operations-sorter: method
+    tags-sorter: alpha
+    path: /sw
+    disable-swagger-default-url: true
+    display-query-params-without-oauth2: true
+  paths-to-match:
